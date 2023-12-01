@@ -1,0 +1,15 @@
+<div class="input-group mb-3">
+    <span class="input-group-text">Dodaj do listy</span>
+    <input type="text" class="form-control" #text/>
+    <button class="btn btn-primary" (click)="addTodo()">Dodaj</button>
+</div>
+<ul class="list-group mb-5">
+<li class="list-group-item" *ngFor="let item of items">
+{{item.text}}<br/>
+{{item.date}}
+<br>
+
+</li>
+
+
+</ul>
